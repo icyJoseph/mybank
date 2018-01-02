@@ -11,7 +11,7 @@ describe("App", () => {
 
   describe("renders wallet", () => {
     it("displays wallet", () => {
-      expect(app.find("Wallet").exists()).toBe(true);
+      expect(app.find("Connect(Wallet)").exists()).toBe(true);
     });
   });
 });

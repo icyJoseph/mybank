@@ -21,7 +21,8 @@ ShallowWrapper {
         <h2>
           My Bank
 </h2>,
-        <Wallet />,
+        <hr />,
+        <Connect(Wallet) />,
       ],
     },
     "ref": null,
@@ -36,6 +37,15 @@ ShallowWrapper {
         "ref": null,
         "rendered": "My Bank",
         "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
       },
       Object {
         "instance": null,
@@ -59,7 +69,8 @@ ShallowWrapper {
           <h2>
             My Bank
 </h2>,
-          <Wallet />,
+          <hr />,
+          <Connect(Wallet) />,
         ],
       },
       "ref": null,
@@ -74,6 +85,15 @@ ShallowWrapper {
           "ref": null,
           "rendered": "My Bank",
           "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
         },
         Object {
           "instance": null,

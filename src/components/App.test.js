@@ -8,4 +8,10 @@ describe("App", () => {
   it("renders without crashing", () => {
     expect(app).toMatchSnapshot();
   });
+
+  describe("renders wallet", () => {
+    it("displays wallet", () => {
+      expect(app.find("Wallet").exists()).toBe(true);
+    });
+  });
 });

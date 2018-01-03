@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { balance } from "../actions/balance";
 
 export class Wallet extends Component {
   state = {
@@ -9,6 +10,9 @@ export class Wallet extends Component {
   updateBalance = e => {
     this.setState({ balance: parseInt(e.target.value, 10) });
   };
+
+  deposit = () => this.props.deposit(this.state.balance);
+
   render() {
     const { balance } = this.props;
     return (
@@ -20,6 +24,9 @@ export class Wallet extends Component {
           className="input-wallet"
           onChange={this.updateBalance}
         />
+        <button className="btn-deposit" onClick={this.deposit}>
+          Deposit
+        </button>
       </div>
     );
   }

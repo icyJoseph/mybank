@@ -18,5 +18,6 @@ export default function balanceReducer(state = 0, action) {
     default:
       balance = parseInt(read_cookie(BALANCE_COOKIE), 10) || state;
   }
+  bake_cookie(BALANCE_COOKIE, balance);
   return balance;
 }

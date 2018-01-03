@@ -1,14 +1,19 @@
 import * as constants from "../actions/constants";
 
 export default function balanceReducer(state = 0, action) {
+  let balance;
   switch (action.type) {
     case constants.SET_BALANCE:
-      return action.balance;
+      balance = action.balance;
+      break;
     case constants.DEPOSIT:
-      return action.deposit + state;
+      balance = action.deposit + state;
+      break;
     case constants.WITHDRAW:
-      return state - action.withdraw;
+      balance = state - action.withdraw;
+      break;
     default:
-      return state;
+      balance = state;
   }
+  return balance;
 }

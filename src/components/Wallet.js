@@ -7,6 +7,8 @@ export class Wallet extends Component {
     return (
       <div>
         <h3 className="balance">Wallet balance: {balance}</h3>
+        <br />
+        <input type="text" className="input-wallet" />
       </div>
     );
   }

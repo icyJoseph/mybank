@@ -9,4 +9,12 @@ describe("balanceReducer", () => {
       balanceReducer(undefined, { type: constants.SET_BALANCE, balance })
     ).toEqual(balance);
   });
+
+  it("deposits into the balance", () => {
+    const deposit = 10;
+    const initialState = 10;
+    expect(
+      balanceReducer(initialState, { type: constants.DEPOSIT, deposit })
+    ).toEqual(initialState + deposit);
+  });
 });

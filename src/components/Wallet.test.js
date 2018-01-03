@@ -15,4 +15,8 @@ describe("Wallet", () => {
       `Wallet balance: ${props.balance}`
     );
   });
+
+  it("creates an input field to deposit/withdraw from the balance", () => {
+    expect(wallet.find(".input-wallet").exists()).toBe(true);
+  });
 });

@@ -1,4 +1,7 @@
 import * as constants from "../actions/constants";
+import { read_cookie, bake_cookie } from "sfcookies";
+
+const BALANCE_COOKIE = "balance:cookie";
 
 export default function balanceReducer(state = 0, action) {
   let balance;
@@ -13,7 +16,7 @@ export default function balanceReducer(state = 0, action) {
       balance = state - action.withdraw;
       break;
     default:
-      balance = state;
+      balance = parseInt(read_cookie(BALANCE_COOKIE), 10) || state;
   }
   return balance;
 }

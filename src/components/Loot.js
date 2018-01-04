@@ -18,7 +18,16 @@ export class Loot extends Component {
     return (
       <div>
         <h3>Bitcoin balance: {this.calculateBitcoinValue(bitcoin, balance)}</h3>
-        <p>Powered By CoinDesk</p>
+        <p>
+          Powered By{" "}
+          <a
+            href="https://www.coindesk.com/price"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CoinDesk
+          </a>
+        </p>
       </div>
     );
   }

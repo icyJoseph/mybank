@@ -26,7 +26,15 @@ ShallowWrapper {
           
 </h3>,
         <p>
-          Powered By CoinDesk
+          Powered By
+           
+          <a
+                    href="https://www.coindesk.com/price"
+                    rel="noopener noreferrer"
+                    target="_blank"
+          >
+                    CoinDesk
+          </a>
 </p>,
       ],
     },
@@ -54,10 +62,37 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Powered By CoinDesk",
+          "children": Array [
+            "Powered By",
+            " ",
+            <a
+              href="https://www.coindesk.com/price"
+              rel="noopener noreferrer"
+              target="_blank"
+>
+              CoinDesk
+</a>,
+          ],
         },
         "ref": null,
-        "rendered": "Powered By CoinDesk",
+        "rendered": Array [
+          "Powered By",
+          " ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "CoinDesk",
+              "href": "https://www.coindesk.com/price",
+              "rel": "noopener noreferrer",
+              "target": "_blank",
+            },
+            "ref": null,
+            "rendered": "CoinDesk",
+            "type": "a",
+          },
+        ],
         "type": "p",
       },
     ],
@@ -75,7 +110,15 @@ ShallowWrapper {
             
 </h3>,
           <p>
-            Powered By CoinDesk
+            Powered By
+             
+            <a
+                        href="https://www.coindesk.com/price"
+                        rel="noopener noreferrer"
+                        target="_blank"
+            >
+                        CoinDesk
+            </a>
 </p>,
         ],
       },
@@ -103,10 +146,37 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Powered By CoinDesk",
+            "children": Array [
+              "Powered By",
+              " ",
+              <a
+                href="https://www.coindesk.com/price"
+                rel="noopener noreferrer"
+                target="_blank"
+>
+                CoinDesk
+</a>,
+            ],
           },
           "ref": null,
-          "rendered": "Powered By CoinDesk",
+          "rendered": Array [
+            "Powered By",
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "CoinDesk",
+                "href": "https://www.coindesk.com/price",
+                "rel": "noopener noreferrer",
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": "CoinDesk",
+              "type": "a",
+            },
+          ],
           "type": "p",
         },
       ],

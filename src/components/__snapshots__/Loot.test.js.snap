@@ -26,7 +26,6 @@ ShallowWrapper {
 </h3>,
         <h3>
           Bitcoin balance: 
-          Object {}
 </h3>,
       ],
     },
@@ -50,13 +49,13 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             "Bitcoin balance: ",
-            Object {},
+            undefined,
           ],
         },
         "ref": null,
         "rendered": Array [
           "Bitcoin balance: ",
-          Object {},
+          undefined,
         ],
         "type": "h3",
       },
@@ -75,7 +74,6 @@ ShallowWrapper {
 </h3>,
           <h3>
             Bitcoin balance: 
-            Object {}
 </h3>,
         ],
       },
@@ -99,13 +97,13 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               "Bitcoin balance: ",
-              Object {},
+              undefined,
             ],
           },
           "ref": null,
           "rendered": Array [
             "Bitcoin balance: ",
-            Object {},
+            undefined,
           ],
           "type": "h3",
         },

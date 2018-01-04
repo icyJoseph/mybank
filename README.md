@@ -8,7 +8,7 @@ App built using Test Driven Development (TDD) coding style.
 
 ## Description
 
-This application used React-Redux to control a bank balance in USDs. Users can deposit to or withdraw from this balance. The amount to deposit or withdraw is taken from a controlled input.
+This application used React-Redux to control a bank balance in USDs. Users can deposit to or withdraw from this balance. The amount to deposit or withdraw is taken from a controlled input. The current balance is saved as a cookie.
 
 The current balance is converted to Bitcoin value by making an axios `GET` request to the CoinDesk [Bitcoin Price Index API](https://www.coindesk.com/api/). The `response` contains the USD to Bitcoin Rate, which is used by the `Loot` component to perform the conversion from USD to Bitcoin.
 

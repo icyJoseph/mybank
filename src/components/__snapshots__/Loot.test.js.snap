@@ -22,7 +22,7 @@ ShallowWrapper {
           Powered By CoinDesk
 </h3>,
         <h3>
-          Bitcoin balance:
+          Bitcoin balance: 
 </h3>,
       ],
     },
@@ -44,10 +44,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Bitcoin balance:",
+          "children": Array [
+            "Bitcoin balance: ",
+            undefined,
+          ],
         },
         "ref": null,
-        "rendered": "Bitcoin balance:",
+        "rendered": Array [
+          "Bitcoin balance: ",
+          undefined,
+        ],
         "type": "h3",
       },
     ],
@@ -64,7 +70,7 @@ ShallowWrapper {
             Powered By CoinDesk
 </h3>,
           <h3>
-            Bitcoin balance:
+            Bitcoin balance: 
 </h3>,
         ],
       },
@@ -86,10 +92,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Bitcoin balance:",
+            "children": Array [
+              "Bitcoin balance: ",
+              undefined,
+            ],
           },
           "ref": null,
-          "rendered": "Bitcoin balance:",
+          "rendered": Array [
+            "Bitcoin balance: ",
+            undefined,
+          ],
           "type": "h3",
         },
       ],

@@ -1,5 +1,7 @@
 # Bank Balance & Bitcoin calculator
 
+[![Build Status](https://travis-ci.org/icyJoseph/mybank.svg?branch=master)](https://travis-ci.org/icyJoseph/mybank)
+
 ## Purpose
 
 App built using Test Driven Development (TDD) coding style.

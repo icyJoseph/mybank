@@ -22,11 +22,12 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h3>
-          Powered By CoinDesk
-</h3>,
-        <h3>
           Bitcoin balance: 
+          
 </h3>,
+        <p>
+          Powered By CoinDesk
+</p>,
       ],
     },
     "ref": null,
@@ -36,10 +37,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Powered By CoinDesk",
+          "children": Array [
+            "Bitcoin balance: ",
+            "",
+          ],
         },
         "ref": null,
-        "rendered": "Powered By CoinDesk",
+        "rendered": Array [
+          "Bitcoin balance: ",
+          "",
+        ],
         "type": "h3",
       },
       Object {
@@ -47,17 +54,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            "Bitcoin balance: ",
-            undefined,
-          ],
+          "children": "Powered By CoinDesk",
         },
         "ref": null,
-        "rendered": Array [
-          "Bitcoin balance: ",
-          undefined,
-        ],
-        "type": "h3",
+        "rendered": "Powered By CoinDesk",
+        "type": "p",
       },
     ],
     "type": "div",
@@ -70,11 +71,12 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h3>
-            Powered By CoinDesk
-</h3>,
-          <h3>
             Bitcoin balance: 
+            
 </h3>,
+          <p>
+            Powered By CoinDesk
+</p>,
         ],
       },
       "ref": null,
@@ -84,10 +86,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Powered By CoinDesk",
+            "children": Array [
+              "Bitcoin balance: ",
+              "",
+            ],
           },
           "ref": null,
-          "rendered": "Powered By CoinDesk",
+          "rendered": Array [
+            "Bitcoin balance: ",
+            "",
+          ],
           "type": "h3",
         },
         Object {
@@ -95,17 +103,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "Bitcoin balance: ",
-              undefined,
-            ],
+            "children": "Powered By CoinDesk",
           },
           "ref": null,
-          "rendered": Array [
-            "Bitcoin balance: ",
-            undefined,
-          ],
-          "type": "h3",
+          "rendered": "Powered By CoinDesk",
+          "type": "p",
         },
       ],
       "type": "div",

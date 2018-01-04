@@ -7,11 +7,17 @@ export class Loot extends Component {
     this.props.fetchBitcoin();
   }
 
+  calculateBitcoinValue = (bitcoin, balance) => {
+    return bitcoin.bpi
+      ? balance / parseInt(bitcoin.bpi.USD.rate.replace(",", ""), 10)
+      : "";
+  };
+
   render() {
-    const { bitcoin } = this.props;
+    const { balance, bitcoin } = this.props;
     return (
       <div>
-        <h3>Bitcoin balance: {bitcoin.bpi}</h3>
+        <h3>Bitcoin balance: {this.calculateBitcoinValue(bitcoin, balance)}</h3>
         <p>Powered By CoinDesk</p>
       </div>
     );
@@ -20,6 +26,7 @@ export class Loot extends Component {
 
 export default connect(
   state => ({
+    balance: state.balance,
     bitcoin: state.bitcoin
   }),
   { fetchBitcoin }

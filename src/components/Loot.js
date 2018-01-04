@@ -11,8 +11,8 @@ export class Loot extends Component {
     const { bitcoin } = this.props;
     return (
       <div>
-        <h3>Powered By CoinDesk</h3>
         <h3>Bitcoin balance: {bitcoin.bpi}</h3>
+        <p>Powered By CoinDesk</p>
       </div>
     );
   }

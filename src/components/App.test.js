@@ -14,4 +14,10 @@ describe("App", () => {
       expect(app.find("Connect(Wallet)").exists()).toBe(true);
     });
   });
+
+  describe("renders loot", () => {
+    it("displays loot", () => {
+      expect(app.find("Connect(Loot)").exists()).toBe(true);
+    });
+  });
 });

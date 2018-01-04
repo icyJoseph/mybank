@@ -33,4 +33,8 @@ describe("Loot", () => {
       expect(loot.find("h3").text()).toEqual("Bitcoin balance: 0.01");
     });
   });
+
+  it("contains a link to the coindesk price page", () => {
+    expect(loot.find("a").props().href).toBe("https://www.coindesk.com/price");
+  });
 });

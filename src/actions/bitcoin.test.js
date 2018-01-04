@@ -12,7 +12,11 @@ const createMockStore = configureMockStore([thunk]);
 // Pass data into the store
 const store = createMockStore({ bitcoin: {} });
 // See www.coindesk.com/api for the format of a response
-const mockResponse = { body: { bpi: "bitcoin price index" } };
+const mockResponse = {
+  body: {
+    bpi: "bitcoin price index"
+  }
+};
 // set mock adapter
 const mockAxios = new MockAdapter(axios);
 
@@ -20,12 +24,10 @@ const mockAxios = new MockAdapter(axios);
 const apiEndPoint = `https://api.coindesk.com/v1/bpi/currentprice.json`;
 
 // The onGet method will return the mockResponse from axios calls
-mockAxios.onGet(apiEndPoint).reply(200, {
-  mockResponse
-});
+mockAxios.onGet(apiEndPoint).reply(200, mockResponse);
 
 it("creates an async action to fetch the bitcoin value", () => {
-  const expectedActions = [{ bitcoin: mockResponse.body, type: FETCH_BITCOIN }];
+  const expectedActions = [{ bitcoin: mockResponse, type: FETCH_BITCOIN }];
 
   return store.dispatch(fetchBitcoin()).then(() => {
     expect(store.getActions()).toEqual(expectedActions);

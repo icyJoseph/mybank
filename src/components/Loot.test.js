@@ -3,7 +3,6 @@ import { mount, shallow } from "enzyme";
 import { Loot } from "./Loot";
 
 describe("Loot", () => {
-  const mockfetchBitcoin = jest.fn();
   let props = { balance: 10, bitcoin: {} };
   let loot = shallow(<Loot {...props} />);
 
@@ -12,6 +11,7 @@ describe("Loot", () => {
   });
 
   describe("when mounted", () => {
+    const mockfetchBitcoin = jest.fn();
     beforeEach(() => {
       props.fetchBitcoin = mockfetchBitcoin;
       // By mounting the Loot component, componentDidMount() is triggered

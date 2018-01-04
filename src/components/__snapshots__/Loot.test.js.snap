@@ -4,7 +4,10 @@ exports[`Loot renders properly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Loot />,
+  Symbol(enzyme.__unrendered__): <Loot
+    balance={10}
+    bitcoin={Object {}}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -23,6 +26,7 @@ ShallowWrapper {
 </h3>,
         <h3>
           Bitcoin balance: 
+          Object {}
 </h3>,
       ],
     },
@@ -46,13 +50,13 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             "Bitcoin balance: ",
-            undefined,
+            Object {},
           ],
         },
         "ref": null,
         "rendered": Array [
           "Bitcoin balance: ",
-          undefined,
+          Object {},
         ],
         "type": "h3",
       },
@@ -71,6 +75,7 @@ ShallowWrapper {
 </h3>,
           <h3>
             Bitcoin balance: 
+            Object {}
 </h3>,
         ],
       },
@@ -94,13 +99,13 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               "Bitcoin balance: ",
-              undefined,
+              Object {},
             ],
           },
           "ref": null,
           "rendered": Array [
             "Bitcoin balance: ",
-            undefined,
+            Object {},
           ],
           "type": "h3",
         },
